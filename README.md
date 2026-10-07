@@ -41,14 +41,63 @@ An AI-powered document processing system for detecting and masking Personally Id
 ├── sanitize_pptx.py
 ├── sanitize_xlsx.py
 └── face_detection_yunet_2023mar.onnx
+```
 
-```markdown
 ## How to Run
 
 ### Backend
 
 Make sure Python is installed on your system.
 
+Start the FastAPI application:
+
+```bash
+uvicorn app:app --reload
+```
+
+The backend will be available at:
+
+```text
+http://127.0.0.1:8000
+```
+
+### Frontend
+
+Navigate to the frontend directory:
+
+```bash
+cd frontend
+```
+
+Install the required dependencies:
+
+```bash
+npm install
+```
+
+Start the React application:
+
+```bash
+npm start
+```
+
+The frontend will be available at:
+
+```text
+http://localhost:3000
+```
+
+## Security
+
+Do not upload confidential documents, API keys, passwords, environment files, or other sensitive information to the repository.
+
+## Future Improvements
+
+- Support for additional document formats
+- Improved PII detection accuracy
+- Enhanced document insights
+- Additional masking and anonymization techniques
+- Cloud-based deployment
 Start the FastAPI application:
 
 ```bash
